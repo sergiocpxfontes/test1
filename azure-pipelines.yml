@@ -36,7 +36,7 @@ steps:
    inputs:
     azureSubscription: $(azureSubscription)
     appType: $(appType)
-    appNAme: $(appName)
+    appName: $(appName)
     runtimeStack: 'DOTNETCORE|3.1'
     package: '$(System.ArtifactsDirectory)/**/*.zip'
 
