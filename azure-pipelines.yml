@@ -1,6 +1,8 @@
 variables:
  buildConfiguration: 'Release'
-
+ azureSubscription: 'Academia2021Pipeline'
+ appType: 'webAppLinux'
+ appName: 'acad2021pipeline'
 trigger:
   - master
 
@@ -30,3 +32,11 @@ steps:
    inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'Webapp'
+ - task: AzureWebApp@1
+   inputs:
+    azureSubscription: $(azureSubscription)
+    appType: $(appType)
+    appNAme: $(appName)
+    runtimeStack: 'DOTNETCORE|3.1'
+    package: '$(System.ArtifactsDirectory)/**/*.zip'
+
