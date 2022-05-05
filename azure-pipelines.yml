@@ -1,3 +1,8 @@
+variables:
+ buildConfiguration: 'Release'
+ azureSubscription: 'Academia2021Pipeline'
+ appType: 'webAppLinux'
+ appName: 'acad2021pipeline'
 trigger:
   - master
 
@@ -13,3 +18,25 @@ steps:
    inputs:
     command: build
     projects: '**/*.csproj'
+ - task: DotNetCoreCLI@2
+   inputs:
+    command: test
+    projects: '**/UnitTests/*.csproj'
+ - task: DotNetCoreCLI@2
+   inputs:
+    command: publish
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True
+ - task: PublishBuildArtifacts@1
+   inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'Webapp'
+ - task: AzureWebApp@1
+   inputs:
+    azureSubscription: $(azureSubscription)
+    appType: $(appType)
+    appNAme: $(appName)
+    runtimeStack: 'DOTNETCORE|3.1'
+    package: '$(System.ArtifactsDirectory)/**/*.zip'
+
