@@ -2,7 +2,6 @@ D:\Projects\Academia_2021_A\DevOpsSolutions_042022\code\WebApp_Pipeline\WebAppPi
 D:\Projects\Academia_2021_A\DevOpsSolutions_042022\code\WebApp_Pipeline\WebAppPipeline\Lib\bin\Debug\net5.0\Lib.dll
 D:\Projects\Academia_2021_A\DevOpsSolutions_042022\code\WebApp_Pipeline\WebAppPipeline\Lib\bin\Debug\net5.0\ref\Lib.dll
 D:\Projects\Academia_2021_A\DevOpsSolutions_042022\code\WebApp_Pipeline\WebAppPipeline\Lib\bin\Debug\net5.0\Lib.pdb
-D:\Projects\Academia_2021_A\DevOpsSolutions_042022\code\WebApp_Pipeline\WebAppPipeline\Lib\obj\Debug\net5.0\Lib.csproj.AssemblyReference.cache
 D:\Projects\Academia_2021_A\DevOpsSolutions_042022\code\WebApp_Pipeline\WebAppPipeline\Lib\obj\Debug\net5.0\Lib.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\Academia_2021_A\DevOpsSolutions_042022\code\WebApp_Pipeline\WebAppPipeline\Lib\obj\Debug\net5.0\Lib.AssemblyInfoInputs.cache
 D:\Projects\Academia_2021_A\DevOpsSolutions_042022\code\WebApp_Pipeline\WebAppPipeline\Lib\obj\Debug\net5.0\Lib.AssemblyInfo.cs
