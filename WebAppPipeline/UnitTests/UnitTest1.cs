@@ -13,5 +13,13 @@ namespace UnitTests
             Assert.Equal(4, resultado);
 
         }
+        [Fact]
+        public void Test_Soma2()
+        {
+            int resultado = Exemplo.Soma(2, 2);
+
+            Assert.Equal(4, resultado);
+
+        }
     }
 }
